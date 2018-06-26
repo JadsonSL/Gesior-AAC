@@ -35,8 +35,8 @@ $config['base_url'] = $base_url;
 # Using Ajax Field Validation, this is important if you want to use ajax check in your create account.
 $config['site']['sqlHost'] = "localhost";
 $config['site']['sqlUser'] = "root";
-$config['site']['sqlPass'] = "ferobra2010304050";
-$config['site']['sqlBD'] = "global";
+$config['site']['sqlPass'] = "";
+$config['site']['sqlBD'] = "";
 
 # Config Shop
 $outfits_list = array();
@@ -58,11 +58,11 @@ $config['shop']['newitemdays'] = 1;
  */
 $config['pagseguro']['testing'] = true;
 $config['pagseguro']['lightbox'] = true;
-$config['pagseguro']['tokentest'] = "8F6D588DEF924215BD84528233AD59A9";
+$config['pagseguro']['tokentest'] = "";
 
 # Pagseguro configs
-$config['pagseguro']['email'] = "souzaariick@gmail.com";
-$config['pagseguro']['token'] = "42BEDFEAAFDC4AB299A00C302235CCD4";
+$config['pagseguro']['email'] = "";
+$config['pagseguro']['token'] = "";
 $config['pagseguro']['produtoNome'] = 'Tibia Coins';
 $config['pagseguro']['urlRedirect'] =  $config['base_url'];
 $config['pagseguro']['urlNotification'] = $config['base_url'].'retpagseguro.php';
@@ -86,7 +86,7 @@ $config['paypal']['email'] = "";
 
 # Social Networks
 $config['social']['status'] = true;
-$config['social']['facebook'] = "https://www.facebook.com/otservferobra/";
+$config['social']['facebook'] = "https://www.facebook.com/";
 
 # Character Former name, time in days to show the former names
 $config['site']['formerNames'] = 10;
@@ -107,7 +107,7 @@ $config['site']['quests'] = array(
 $config['site']['private-servlist.com_server_id'] = 0;
 
 # Account Maker Config
-$config['site']['serverPath'] = "C:\Users\marco\Documents/forgotten-server/";
+$config['site']['serverPath'] = "";
 $config['site']['encryptionType'] = 'sha1';
 $config['site']['useServerConfigCache'] = false;
 $towns_list = array(
@@ -145,7 +145,7 @@ $config['site']['max_players_per_account'] = 7;
 # Emails Config
 $config['site']['send_emails'] = true;
 $config['site']['mail_address'] = "";
-$config['site']['mail_senderName'] = "Contas - Ferobra Global";
+$config['site']['mail_senderName'] = "";
 $config['site']['smtp_enabled'] = true;
 $config['site']['smtp_host'] = "ssl://smtp.gmail.com";
 $config['site']['smtp_port'] = 465;
