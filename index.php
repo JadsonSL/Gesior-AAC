@@ -11,7 +11,7 @@ define('INITIALIZED', true);
 if(!defined('ONLY_PAGE'))
 	define('ONLY_PAGE', false);
 
-define(AJAXREQUEST,false);
+define('AJAXREQUEST', false);
 header("X-Content-Type-Options: nosniff");
 header("X-FRAME-OPTIONS: DENY");
 header("X-XSS-Protection: 1");
