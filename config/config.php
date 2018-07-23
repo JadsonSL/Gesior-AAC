@@ -85,8 +85,7 @@ $config['banktransfer']['operation'] = 003;
 $config['paypal']['email'] = "";
 
 # Social Networks
-$config['social']['status'] = true;
-$config['social']['facebook'] = "https://www.facebook.com/";
+$config['social']['facebook'] = "https://www.facebook.com/tibia";
 
 # Character Former name, time in days to show the former names
 $config['site']['formerNames'] = 10;

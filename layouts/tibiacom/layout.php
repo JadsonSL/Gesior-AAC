@@ -616,7 +616,8 @@ if(!defined('INITIALIZED'))
                                         <div class="Bottom" style="background-image:url(<?php echo $layout_name; ?>/images/global/general/box-bottom.gif);">
                                         </div>
                                     </div>
-                                    <!-- Facebook theme box -->
+									
+                                    <!-- Facebook theme box
                                     <div id="NetworksBox" class="Themebox" style="background-image:url(<?php echo $layout_name; ?>/images/global/themeboxes/networks/networksbox.png);">
                                         <div id="FacebookBlock" >
                                             <a id="FacebookPageLink" target="_blank" href="<?php echo $config['social']['facebook']; ?>" >
@@ -632,7 +633,7 @@ if(!defined('INITIALIZED'))
                                             </div>
                                         </div>
                                         <div class="Bottom" style="background-image:url(<?php echo $layout_name; ?>/images/global/general/box-bottom.gif);">
-                                        </div>
+                                        </div> -->
 
                                         <!-- current poll theme box -->
                                         <?php
@@ -713,5 +714,17 @@ if(!defined('INITIALIZED'))
         gtag('config', 'UA-110963342-1');
     </script>
     <?php }?>
+	<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&autoLogAppEvents=1&version=v2.12&appId=1722335358003085';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+	<script src="<?php echo $layout_name; ?>/js/facebook/pace.min.js" data-pace-options='{ "elements": false, "startOnPageLoad": true, "ajax": false, "restartOnRequestAfter": false }'></script>
+    <!-- float facebook like box start -->
+    <script id="float_fb" src="<?php echo $layout_name; ?>/js/facebook/fb_float_plugin.js" data-href="<?php echo $config['social']['facebook']; ?>" async></script>
+    <!-- float facebook like box end -->
 </body>
 </html>
