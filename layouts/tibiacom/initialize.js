@@ -1,7 +1,12 @@
+/**
+ * ------------------------------------------------------------------ JavaScripts which are loaded by the OnLoad function of the body tag -------------------------------------------------------------------
+ */
+
 // executes JavaScripts for the loginbox and the menu
 function InitializePage() {
     LoadLoginBox();
     LoadMenu();
+    console.log("%cEspere! Este local Ã© apenas para desenvolvedores. Seu ip foi registrado em nosso banco de dados para averiguaÃ§Ã£o! Caso nÃ£o tenha autorizaÃ§Ã£o vocÃª pode ser banido de nosso site. ", "color: red; font-size: x-large");
 }
 
 // remove the deactivation container from the website
