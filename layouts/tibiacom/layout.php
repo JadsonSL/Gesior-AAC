@@ -793,7 +793,7 @@ if(!defined('INITIALIZED'))
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-    <?php if ($config['base_url'] !== 'https://localhost/global-website/production/ferobra-website/'){?>
+    <?php if ($config['base_url'] !== 'https://127.0.0.1/'){?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110963342-1"></script>
     <script>
