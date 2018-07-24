@@ -22,9 +22,9 @@ Header set Cache-Control "public, max-age=60"
 RewriteEngine on
 Options All -Indexes
 
-ErrorDocument 403 https://ferobraglobal.com/?subtopic=erro
-ErrorDocument 404 https://ferobraglobal.com/?subtopic=erro
-ErrorDocument 500 https://ferobraglobal.com/?subtopic=erro
+ErrorDocument 403 https://127.0.0.1/?subtopic=erro
+ErrorDocument 404 https://127.0.0.1/?subtopic=erro
+ErrorDocument 500 https://127.0.0.1/?subtopic=erro
 
 # WC HTTPS Redirect
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
