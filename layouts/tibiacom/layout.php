@@ -501,10 +501,100 @@ if(!defined('INITIALIZED'))
                     </div>
                     <script>InitializePage();</script>
                 </div>
+          				
+						
+<?php
+	$casts = $SQL->query("SELECT COUNT(*) AS 'cast' FROM `live_casts`")->fetch();
+	$cast = $casts["cast"];
+	$specs = $SQL->query("SELECT SUM(`spectators`) AS 'spec' FROM `live_casts`")->fetch();
+	$spec = $specs["spec"];
+	if($spec === nil)
+		$spec = 0;
+?>
 
-                <div id="ContentColumn">
-                    <div id="Content" class="Content">
-                        <div id="ContentHelper">
+
+<div id="ContentColumn">
+<div id="Content" class="Content">
+
+<div id="ContentHelper">
+<div id="" class="Box">
+<div class="Corner-tl" style="background-image:url(<?php echo $layout_name; ?>/images/global/content/corner-tl.gif);"></div>
+<div class="Corner-tr" style="background-image:url(<?php echo $layout_name; ?>/images/global/content/corner-tr.gif);"></div>
+<div class="Border_1" style="background-image:url(<?php echo $layout_name; ?>/images/global/content/border-1.gif);"></div>
+<div class="BorderTitleText" style="background-image:url(<?php echo $layout_name; ?>/images/global/content/newsheadline_background.gif); height: 28px;">
+<div class="InfoBar">
+&nbsp;
+<a class="InfoBarBlock" style="text-decoration:none" href="#">
+<img class="InfoBarBigLogo" src="<?php echo $layout_name; ?>/images/global/header/info/icon-cast.png">
+<span class="InfoBarNumbers"><img class="InfoBarSmallElement" src="<?php echo $layout_name; ?>/images/global/header/info/icon-streamers.png">
+<?php
+					if(count($casts) > 0) {
+			?>	
+
+<span class="InfoBarSmallElement">No cast's on.</span>
+
+
+<?php
+					} else {
+			?>	
+<span class="InfoBarSmallElement"><?PHP echo $cast;?> online</span>
+<img class="InfoBarSmallElement" src="<?php echo $layout_name; ?>/images/global/header/info/icon-viewers.png">
+<span class="InfoBarSmallElement"><?PHP echo $spec;?> spectators</span>
+			
+			<?php
+					}
+			?>	
+</span>
+</a>
+		
+		
+
+ 
+<a href="#" style="text-decoration:none" onclick="document.getElementById('pop').style.display='block';">
+							 
+
+<img class="InfoBarBigLogo" src="<?php echo $layout_name; ?>/images/global/header/info/discordapp.png">
+<span class="InfoBarNumbers">
+<img class="InfoBarSmallElement" src="<?php echo $layout_name; ?>/images/global/header/info/icon-streamers.png">
+<span class="InfoBarSmallElement">Discord</span>
+</span>
+
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a style="text-decoration:none" href="?subtopic=downloadclient&step=downloadagreement">
+<img class="InfoBarBigLogo" src="<?php echo $layout_name; ?>/images/global/header/info/icon-download.png">
+<span class="InfoBarNumbers">
+<span class="InfoBarSmallElement">Download Client</span>
+</span>
+</a>
+<a style="float:right;text-decoration:none;"  href="?subtopic=worlds">
+<img class="InfoBarBigLogo" src="<?php echo $layout_name; ?>/images/global/header/info/icon-players-online.png">
+<span class="InfoBarNumbers">
+<span class="InfoBarSmallElement">
+<?php
+					if($config['status']['serverStatus_online'] == 1)
+						$players_online1 = $config['status']['serverStatus_players'].' Players Online&nbsp;';
+					else
+						$players_online1 = ' Server Offline&nbsp;';
+				?>
+<?php echo $players_online1; ?>
+</span>
+</span>
+</a>
+</div>
+</div>
+<div class="Border_1" style="background-image:url(<?php echo $layout_name; ?>/images/global/content/border-1.gif);">
+</div>
+<div class="CornerWrapper-b">
+<div class="Corner-bl" style="background-image:url(<?php echo $layout_name; ?>/images/global/content/corner-bl.gif);"></div>
+</div>
+<div class="CornerWrapper-b"><div class="Corner-br" style="background-image:url(<?php echo $layout_name; ?>/images/global/content/corner-br.gif);">
+</div>
+</div>
+</div>
+						
+						
+						
                             <script type="text/javascript" src="<?php echo $layout_name; ?>/newsticker.js"></script>
                             <?php echo $news_content; ?>
                             <div id="NewsArchive" class="Box">

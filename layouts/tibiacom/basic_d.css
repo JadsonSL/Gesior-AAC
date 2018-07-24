@@ -3469,3 +3469,43 @@ table.fixed td {
 #GuildInformation .MessageContainer .Message {
     word-wrap: break-word;
 }
+
+/* -------- */
+/* Info Bar */
+/* -------- */
+
+.InfoBar {
+  position: relative;
+  height: 28px;
+  top: 6px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 10px;
+  color: white;
+  font-family: Verdana, Arial, Times New Roman, sans-serif;
+}
+.InfoBarBlock {
+  margin-right: 15px;
+}
+.InfoBarBigLogo {
+  margin-bottom: 0px;
+}
+.InfoBarSmallElement {
+  margin-left: 5px;
+}
+.InfoBarNumbers {
+  top: -4px;
+  position: relative;
+}
+.InfoBar a {
+  font-family: Verdana, Arial, Times New Roman, sans-serif;
+  font-size: 7pt;
+  font-weight: normal;
+  color: white;
+}
+.InfoBar a:link    { color: white; font-weight: normal; text-decoration: none; }
+.InfoBar a:visited { color: white; font-weight: normal; text-decoration: none; }
+.InfoBar a:focus   { color: white; font-weight: normal; text-decoration: none; }
+.InfoBar a:active  { color: white; font-weight: normal; text-decoration: underline; }
+.InfoBar a:hover   { color: white; font-weight: normal; text-decoration: underline; }
+}
