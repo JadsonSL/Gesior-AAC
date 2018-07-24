@@ -75,10 +75,10 @@ or
 ```bash
 sudo service apache2 restart
 ```
-## credits
+## Creditos/Credits
 @gesior <br>
-@Felipe Monteiro <br>
+@felipe monteiro <br>
 @marcoma <br>
-@Riicksouzaa <br>
+@riicksouzaa <br>
 
 And more developers
