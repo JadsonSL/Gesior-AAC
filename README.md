@@ -78,7 +78,7 @@ sudo service apache2 restart
 ## Creditos/Credits
 @gesior <br>
 @felipe monteiro <br>
-@marcoma <br>
+@marcomoa <br>
 @riicksouzaa <br>
 
 And more developers
