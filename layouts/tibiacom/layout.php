@@ -629,8 +629,15 @@ if(!defined('INITIALIZED'))
                                 <div class="CornerWrapper-b"><div class="Corner-bl" style="background-image:url(<?php echo $layout_name; ?>/images/global/content/corner-bl.gif);"></div></div>
                                 <div class="CornerWrapper-b"><div class="Corner-br" style="background-image:url(<?php echo $layout_name; ?>/images/global/content/corner-br.gif);"></div></div>
                             </div>
-
-                            <div id="ThemeboxesColumn">
+							
+              <div id="ThemeboxesColumn" >
+                <div id="DeactivationContainerThemebox" onClick="DisableDeactivationContainer();" ></div>
+                <div id="RightArtwork">
+                   <img id="Monster" src="<?php echo $layout_name; ?>/images/global/header/monsters/dragonlord.gif" alt="Monster of the Week">
+                  <img id="Pedestal" src="<?php echo $layout_name; ?>/images/global/header/pedestal.png" alt="Monster Pedestal Box"/>
+                </div>							
+							
+                            <!--<div id="ThemeboxesColumn">
                                 <div id="DeactivationContainerThemebox" onclick="DisableDeactivationContainer();"></div>
                                 <div id="RightArtwork">
                                     <img id="Monster" src="<?php echo $layout_name; ?>/images/global/header/monsters/dragonlord.gif" alt="Monster of the Week">
@@ -666,7 +673,7 @@ if(!defined('INITIALIZED'))
                                     }
                                     ?>
                                     <div id="PlayersOnline" onclick="window.location = '?subtopic=worlds';"><?php echo $players_online; ?></div>
-                                </div>
+                                </div>-->
                                 <div id="Themeboxes">
                                     <?php
                                     $skills = $SQL->query('SELECT * FROM players WHERE deleted = 0 AND group_id = 1 AND account_id != 1 ORDER BY level DESC LIMIT 5');

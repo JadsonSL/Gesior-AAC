@@ -233,62 +233,62 @@ body {
  */
 
 #LeftArtwork {
-    position: absolute;
-    height: 140px;
-    width: 166px;
-    top: -140px;
-    left: 4px;
-    background-repeat: no-repeat;
-    z-index: 5;
+	position: absolute;
+	height: 140px;
+	width: 166px;
+	top: -140px;
+	left: 4px;
+	background-repeat: no-repeat;
+	z-index:5;
 }
 
 #LeftArtwork #TibiaLogoArtworkTop {
-    position: absolute;
-    top: -17px;
-    left: -14px;
-    height: 158px;
-    width: 203px;
-    z-index: 5;
-    cursor: pointer;
-    border: 0;
+  position: absolute;
+	top: -17px;
+	left: -14px;
+	height: 158px;
+	width: 196px;
+	z-index: 5;
+	cursor: pointer;
+	border: 0px;
 }
 
 #LeftArtwork #LogoLink {
-    position: absolute;
-    bottom: 14px;
-    left: 58px;
-    height: 14px;
-    width: 50px;
-    z-index: 99;
-    cursor: pointer;
+	position: absolute;
+	bottom: 14px;
+	left: 58px;
+	height: 14px;
+	width: 50px;
+	z-index: 99;
+	cursor: pointer;
 }
 
 #RightArtwork {
-    text-align: left;
-    position: absolute;
-    top: 143px;
-    right: 24px;
-    width: 132px;
-    background-repeat: no-repeat;
-    z-index: 90;
+	text-align: left;
+	position: absolute;
+	top: 181px;
+	right: 24px;
+	width: 132px;
+	background-repeat: no-repeat;
+	z-index: 100;
 }
 
 #RightArtwork #Monster {
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    top: -137px;
-    left: 7px;
-    z-index: 15;
-    cursor: pointer;
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	top: -137px;
+	left: 7px;
+	z-index: 15;
+	cursor: pointer;
 }
 
-#PedestalAndOnline {
-    position: absolute;
-    left: -10px;
-    top: -105px;
-    width: 153px;
-    height: 107px;
+#Pedestal {
+	position: absolute;
+	left: -10px;
+	top: -105px;
+	width: 153px;
+	height: 69px;
 }
 
 #RightArtwork #PlayersOnline {
