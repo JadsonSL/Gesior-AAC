@@ -616,6 +616,24 @@ if(!defined('INITIALIZED'))
                                     $headline = "Admin Panel";
                                 elseif($_REQUEST['subtopic'] == "tankyou")
                                     $headline = "Thank you";
+								elseif($_REQUEST['subtopic'] == "tibiarules")
+                                    $headline = "Tibia Rules";
+								elseif($_REQUEST['subtopic'] == "team")
+                                    $headline = "Tibia Support";
+								elseif($_REQUEST['subtopic'] == "shop")
+                                    $headline = "Webshop";
+								elseif($_REQUEST['subtopic'] == "experiencetable")
+                                    $headline = "Experience Table";
+								elseif($_REQUEST['subtopic'] == "serverinfo")
+                                    $headline = "Server Info";
+								elseif($_REQUEST['subtopic'] == "lostaccount")
+                                    $headline = "Lost Account";
+								elseif($_REQUEST['subtopic'] == "downloadclient")
+                                    $headline = "Download Client";
+								elseif($_REQUEST['subtopic'] == "killstatistics")
+                                    $headline = "Kill Statistics";
+								elseif($_REQUEST['subtopic'] == "newsarchive")
+                                    $headline = "News Archive";
                                 ?>
                                 <img id="ContentBoxHeadline" class="Title" src="pages/headline.php?txt=<?PHP echo ucwords(str_replace('_', ' ', strtolower($headline))); ?>" alt="Contentbox headline">
                                 <div class="Border_2">
