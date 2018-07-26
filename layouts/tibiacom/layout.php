@@ -702,7 +702,8 @@ if(!defined('INITIALIZED'))
                                         <div class="ThemeboxButton">
                                             <form action="?subtopic=accountmanagement&action=services&ServiceCategoryID=2" method="post" style="padding:0px;margin:0px;">
                                                 <div class="BigButton" style="background-image:url(<?php echo $layout_name; ?>/images/global/buttons/sbutton_green.gif)">
-                                                    <div onmouseover="MouseOverBigButton(this);" onmouseout="MouseOutBigButton(this);"><div class="BigButtonOver" style="background-image:url(<?php echo $layout_name; ?>/images/global/buttons/sbutton_green_over.gif);">
+                                                    <div onmouseover="MouseOverBigButton(this);" onmouseout="MouseOutBigButton(this);">
+                                                        <div class="BigButtonOver" style="background-image:url(<?php echo $layout_name; ?>/images/global/buttons/sbutton_green_over.gif);">
                                                         </div>
                                                         <input class="ButtonText" type="image" name="Get Premium" alt="Get Premium" src="<?php echo $layout_name; ?>/images/global/buttons/_sbutton_gettibiacoins.gif">
                                                     </div>
