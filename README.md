@@ -26,7 +26,7 @@
 
 ### How to install
 
-* Clone the Gesior-AAc From Github.
+* Clone the Gesior-ACC From Github.
 * change the permission for write in /cache.
 
 ```bash
