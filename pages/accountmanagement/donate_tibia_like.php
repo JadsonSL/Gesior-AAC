@@ -211,13 +211,6 @@ if ($logged) {
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                <small>
-                                                                    <div style="float: left; margin-right: 5px;">*</div>
-                                                                    <div style="float: left;">
-                                                                        <div id="ExchangeRateNote">Please note that the prices may vary depending on the current exchange rate.</div>
-                                                                        Different prices may apply depending on your selected payment method.
-                                                                    </div>
-                                                                </small>
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -269,10 +262,7 @@ if ($logged) {
             $payment_id++;
         }
         $main_content .= '
-                                                                </div>
-                                                                <small>
-                                                                    <div style="clear: both; margin-right: 5px; text-align: left;">** If you use this payment method, you will have to wait 6 months before you can trade the purchased Tibia Coins in the Market or gift them to other characters using the Store. Of course, you can use these Tibia Coins without delay to purchase products for your own account.</div>
-                                                                </small>
+                                                                </div>                                                               
                                                             </td>
                                                         </tr>
                                                     </tbody>
