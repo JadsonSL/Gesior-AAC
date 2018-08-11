@@ -195,7 +195,7 @@ if ($logged) {
                                                                                         <input type="radio" id="ServiceID_' . $coins . '" name="ServiceID" value="' . $reais . '" style="display: none;">' . $coins . ' Coins  </div>
                                                                                     </div>
                                                                                     <div class="ServiceIDPriceContainer">
-                                                                                        <span class="ServiceIDPrice" id="PD_' . $reais . '">R$ ' . ($reais / 100) . '.00</span>                                                                                        
+                                                                                        <span class="ServiceIDPrice" id="PD_' . $reais . '">R$ ' . ($reais / 100) . ',00</span>                                                                                        
                                                                                     </div>
                                                                                 </label>
                                                                             </div>
