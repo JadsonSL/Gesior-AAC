@@ -53,21 +53,25 @@ $loyalty_title = array(
 ');
 $config['shop']['newitemdays'] = 1;
 
-/**
- * PAGSEGURO FIXED
- */
+# Configure your active payment method with this
+$config['paymentsMethods'] = [
+    'pagseguro' => true,
+    'paypal' => false,
+    'transfer' => false
+];
+
+# Pagseguro configs
 $config['pagseguro']['testing'] = true;
 $config['pagseguro']['lightbox'] = true;
 $config['pagseguro']['tokentest'] = "";
 
-# Pagseguro configs
 $config['pagseguro']['email'] = "";
 $config['pagseguro']['token'] = "";
 $config['pagseguro']['produtoNome'] = 'Tibia Coins';
 $config['pagseguro']['urlRedirect'] =  $config['base_url'];
 $config['pagseguro']['urlNotification'] = $config['base_url'].'retpagseguro.php';
-$config['pagseguro']['offers'] = [
-    500=>75,
+$config['donate']['offers'] = [
+    500=>50,
     800=>125,
     1500=>250,
     2800=>500,
@@ -186,33 +190,8 @@ $config['site']['accounts_hidden'] = array(1);
 # PAGE: lostaccount.php
 $config['site']['email_lai_sec_interval'] = 180;
 
-/**
- * DONATE CONFIG LIKE PAGASEGURO OLD_CONFIG
- * 100 = R$1,00 // 50 = TIBIA COINS COUNT
- *
- */
-$config['donate']['offers'] = [
-    500=>50,
-    800=>125,
-    1500=>250,
-    2800=>500,
-    4900=>1000
-];
-/**
- * configure your active payment method with this
- * TRUE = ACTIVE
- * FALSE = INACTIVE
- */
-$config['paymentsMethods'] = [
-    'pagseguro' => true,
-    'paypal' => false,
-    'transfer' => false
-];
-
 # Layout Config
 $config['site']['layout'] = 'tibiacom';
 $config['site']['vdarkborder'] = '#505050';
 $config['site']['darkborder'] = '#D4C0A1';
 $config['site']['lightborder'] = '#F1E0C6';
-$config['site']['download_page'] = false;
-$config['site']['serverinfo_page'] = true;
