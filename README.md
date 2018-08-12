@@ -1,7 +1,8 @@
 ## Gesior-AAC
 
 ### Entre em contato
-> +55 (38) 991863004. ![whatsapp](https://cdn.icon-icons.com/icons2/373/PNG/32/Whatsapp_37229.png) <br>
+> Tel: +55 (38) 991863004 </p>
+> E-Mail: marcomoa@hotmail.com
 
 #### PT-BR
 * Bem vindo ao tutorial de instalação desse website feito com amor e carinho pra vcs meus queridos tibianos.
